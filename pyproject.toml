@@ -17,12 +17,12 @@ dependencies = [
     "requests>=2.32.2",
     "ipykernel>=7.1.0",
     "jupyterlab>=4.5.3",
-    "loguru>=0.7.3",
-    "albumentations>=2.0.8",
-    "segmentation-models-pytorch>=0.5.0",
-    "torch==2.9.0+cu129",
-    "torchvision==0.24.0+cu129",
-    "torchaudio==2.9.0+cu129",
+    "loguru",
+    "albumentations",
+    "segmentation-models-pytorch",
+    "torch==2.9.0+cu130",
+    "torchvision==0.24.0+cu130",
+    "torchaudio==2.9.0+cu130",
     "ipywidgets>=8.1.8",
     "language-data>=1.4.0",
     "quantization>=0.0.1",
@@ -37,7 +37,7 @@ dependencies = [
     "ninja",
     "packaging",
     "psutil",
-    "lighteval[multilingual]>=0.13.0",
+    "lighteval[multilingual]",
     "transformers",
     "huggingface-hub",
     "flash-attn",
@@ -50,13 +50,13 @@ torch = {index = "pytorch-cu129", marker = "sys_platform == 'linux'"}
 torchvision = {index = "pytorch-cu129", marker = "sys_platform == 'linux'"}
 torchaudio = {index = "pytorch-cu129", marker = "sys_platform == 'linux'"}
 xformers = {index = "pytorch-cu129", marker = "sys_platform == 'linux'"}
-flash-attn = {url = "https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.7.11/flash_attn-2.8.3%2Bcu129torch2.9-cp312-cp312-linux_x86_64.whl"}
+flash-attn = { url = "https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.1/flash_attn-2.8.1+cu13torch2.9cxx11abiTRUE-cp312-cp312-linux_x86_64.whl" }
 
 
 
 [[tool.uv.index]]
-name = "pytorch-cu129"
-url = "https://download.pytorch.org/whl/cu129"
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
 
 
 [tool.setuptools.packages.find]
